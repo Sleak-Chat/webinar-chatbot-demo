@@ -1,5 +1,5 @@
 const apiInstance = axios.create({
-  baseURL: "https://943f-94-210-18-40.ngrok-free.app",
+  baseURL: "https://wct.solidsolutionsai.com",
   headers: { "Content-Type": "application/json" }
 });
 
