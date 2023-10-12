@@ -123,7 +123,7 @@ app.post("/bot_create", async (req, res) => {
       status: "accepting chats",
       avatar: "https://cdn.iconscout.com/icon/free/png-256/bot-136-504893.png",
       webhooks: {
-        url: server_url,
+        url: restApi,
         actions: [
           {
             name: "incoming_event",
