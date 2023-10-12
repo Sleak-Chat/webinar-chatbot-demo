@@ -7,7 +7,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
 const app = express().use(bodyParser.json()); // creates http server
-const secret_key = "R1tGoe7Azy3jEvtC7ugXgsbmUyWpfApq"; // webhooks secret key
+const secret_key = "X32gigOlbF5lB7yTDqry0y81pynvNWbq"; // webhooks secret key
 const server_url = "https://wct.solidsolutionsai.com"; // url for webhooks
 
 // Client ID, Secret and RedirectURI from Developer Console app:
