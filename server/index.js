@@ -33,7 +33,7 @@ const accountsApi = axios.create({
 });
 
 const restApi = axios.create({
-  baseURL: "https://api.livechatinc.com/v3.4"
+  baseURL: "https://api.livechatinc.com/v3.5"
 });
 
 const chatBotApi = axios.create({
@@ -87,7 +87,7 @@ app.post("/bot_list", async (req, res) => {
 
     // post to LiveChat
     const botsList = await restApi.post(
-      "/configuration/action/get_bot_agents",
+      "/configuration/action/list_bots",
       botsBody,
       {
         headers: {
@@ -123,7 +123,7 @@ app.post("/bot_create", async (req, res) => {
       status: "accepting chats",
       avatar: "https://cdn.iconscout.com/icon/free/png-256/bot-136-504893.png",
       webhooks: {
-        url: restApi,
+        url: server_url,
         actions: [
           {
             name: "incoming_event",
