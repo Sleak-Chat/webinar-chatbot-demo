@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const axios = require("axios");
 const app = express().use(bodyParser.json()); // creates http server
 const secret_key = "R1tGoe7Azy3jEvtC7ugXgsbmUyWpfApq"; // webhooks secret key
-const server_url = "https://webinar-chatbot-demo.vercel.app/" // url for webhooks
+const server_url = "https://wct.solidsolutionsai.com/api/v1/prediction/02496706-b7e5-4ec2-8dd5-39a78248f2ad" // url for webhooks
 
 // Client ID, Secret and RedirectURI from Developer Console app:
 // https://developers.livechatinc.com/console/apps/
