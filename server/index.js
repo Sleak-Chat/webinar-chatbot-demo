@@ -6,13 +6,13 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
 const app = express().use(bodyParser.json()); // creates http server
-const secret_key = "wDo96SM5wElzqpwNLfWbjuuvytZiMaJD"; // webhooks secret key
+const secret_key = "R1tGoe7Azy3jEvtC7ugXgsbmUyWpfApq"; // webhooks secret key
 const server_url = "https://wct.solidsolutionsai.com/api/v1/prediction/02496706-b7e5-4ec2-8dd5-39a78248f2ad" // url for webhooks
 
 // Client ID, Secret and RedirectURI from Developer Console app:
 // https://developers.livechatinc.com/console/apps/
-const client_id = "4892358244816f912afac48774d1e160";
-const client_secret = "df68f792a0d5b7ec6e337283d6e10400aff46c0e";
+const client_id = "2ac25ec0224bc7616ca4af5112193e5f";
+const client_secret = "45bd4d459a93f4e0af7f883dad292ed5b18b2c20";
 const redirect_uri = "https://webinar-chatbot-demo.vercel.app/";
 
 // Story ID from URL: https://app.chatbot.com/stories/5de66551341e2d000799a070
