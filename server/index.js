@@ -1,26 +1,26 @@
 const cors = require("cors");
 var corsOptions = {
-  origin: 'your_configuration_page_url',
+  origin: 'https://webinar-chatbot-demo.vercel.app/',
 }
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
 const app = express().use(bodyParser.json()); // creates http server
-const secret_key = "token"; // webhooks secret key
-const server_url = "your_server_url" // url for webhooks
+const secret_key = "wDo96SM5wElzqpwNLfWbjuuvytZiMaJD"; // webhooks secret key
+const server_url = "https://wct.solidsolutionsai.com/api/v1/prediction/02496706-b7e5-4ec2-8dd5-39a78248f2ad" // url for webhooks
 
 // Client ID, Secret and RedirectURI from Developer Console app:
 // https://developers.livechatinc.com/console/apps/
-const client_id = "your_app_client_id";
-const client_secret = "your_app_client_secret";
-const redirect_uri = "your_app_client_secret";
+const client_id = "4892358244816f912afac48774d1e160";
+const client_secret = "df68f792a0d5b7ec6e337283d6e10400aff46c0e";
+const redirect_uri = "https://webinar-chatbot-demo.vercel.app/";
 
 // Story ID from URL: https://app.chatbot.com/stories/5de66551341e2d000799a070
-const storyId = "your__chatbot_story_id";
+const storyId = "5e3940cc739ca700079d81a6";
 
 // Client access token from: https://app.chatbot.com/settings/developers
 const cbToken =
-  "Bearer 5XXXXXXXXXXXX_your_chatbot_client_access_token";
+  "Bearer Yvs6yFVsrsNwn7frpVshO_YExjuC_qfo";
 
 // Globals
 // TODO: Move to DB
@@ -33,7 +33,7 @@ const accountsApi = axios.create({
 });
 
 const restApi = axios.create({
-  baseURL: "https://api.livechatinc.com/v3.1"
+  baseURL: "https://api.livechatinc.com/v3.4"
 });
 
 const chatBotApi = axios.create({

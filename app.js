@@ -1,5 +1,5 @@
 const apiInstance = axios.create({
-  baseURL: "your_server_url",
+  baseURL: "https://wct.solidsolutionsai.com/api/v1/prediction/02496706-b7e5-4ec2-8dd5-39a78248f2ad",
   headers: { "Content-Type": "application/json" }
 });
 
