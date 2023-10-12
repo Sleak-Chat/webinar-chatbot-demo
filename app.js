@@ -1,5 +1,5 @@
 const apiInstance = axios.create({
-  baseURL: "https://wct.solidsolutionsai.com/api/v1/prediction/02496706-b7e5-4ec2-8dd5-39a78248f2ad",
+  baseURL: "https://webinar-chatbot-demo.vercel.app/",
   headers: { "Content-Type": "application/json" }
 });
 
