@@ -1,5 +1,5 @@
 const apiInstance = axios.create({
-  baseURL: "https://webinar-chatbot-demo.vercel.app",
+  baseURL: "https://fd41-94-210-18-40.ngrok.io",
   headers: { "Content-Type": "application/json" }
 });
 

@@ -1,19 +1,19 @@
 const cors = require("cors");
 var corsOptions = {
-  origin: 'https://webinar-chatbot-demo.vercel.app/',
+  origin: 'https://webinar-chatbot-demo.vercel.app',
 }
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
 const app = express().use(bodyParser.json()); // creates http server
 const secret_key = "R1tGoe7Azy3jEvtC7ugXgsbmUyWpfApq"; // webhooks secret key
-const server_url = "https://webinar-chatbot-demo.vercel.app" // url for webhooks
+const server_url = "https://fd41-94-210-18-40.ngrok.io"; // url for webhooks
 
 // Client ID, Secret and RedirectURI from Developer Console app:
 // https://developers.livechatinc.com/console/apps/
 const client_id = "2ac25ec0224bc7616ca4af5112193e5f";
 const client_secret = "45bd4d459a93f4e0af7f883dad292ed5b18b2c20";
-const redirect_uri = "https://webinar-chatbot-demo.vercel.app/";
+const redirect_uri = "https://webinar-chatbot-demo.vercel.app";
 
 // Story ID from URL: https://app.chatbot.com/stories/5de66551341e2d000799a070
 const storyId = "5e3940cc739ca700079d81a6";
