@@ -1,6 +1,6 @@
 const cors = require("cors");
 var corsOptions = {
-  origin: 'https://webinar-chatbot-demo.vercel.app',
+  origin: 'https://webinar-chatbot-demo.vercel.app/',
 }
 const express = require("express");
 const bodyParser = require("body-parser");
